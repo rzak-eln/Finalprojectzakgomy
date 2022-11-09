@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="shortcut icon" type="png" href="images/icon/favicon.png" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Comaptible" content="IE=edge" />
+    <title>ZE-L</title>
+    <meta name="desciption" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <script type="text/javascript" src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.js"></script>
+    <script>
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop()) {
+          $("nav").addClass("black");
+        } else {
+          $("nav").removeClass("black");
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header id="header">
+      <nav>
+        <div class="logo">
+          <a href="#" class="logo">ZE<span> Learning </span></a>
+        </div>
+        <ul>
+          <li><a class="active" href="">Home</a></li>
+          <li><a href="#teachers_section">Teachers</a></li>
+          <li><a href="#courses_section">Courses</a></li>
+          <li><a href="#contactus_section">Contact us</a></li>
+        </ul>
+        <div class="srch">
+          <input type="text" class="search" placeholder="Search here..." />
+          <img src="assets/icon/search1png.png" alt="search" onclick="slide()" />
+        </div>
+        <a class="get-started" href="login.html">Log-in</a>
+        <img
+          src="assets/icon/menu (1).png"
+          class="menu"
+          onclick="sideMenu(0)"
+          alt="menu"
+        />
+      </nav>
+      <div class="head-container">
+        
+        <div class="quote">
+         <p>Welcome to the ZE learning</p>
+          <h5>
+            "The beautiful thing about learning is that nobody can take it away
+            from you"
+          </h5>
+        </div>
+        <div class="svg-image">
+          <img src="assets/zack/students-watching-webinar-computer-studying-online_74855-15522.jpg" alt="svg" />
+        </div>
+      </div>
+      <div class="side-menu" id="side-menu">
+        <div class="close" onclick="sideMenu(1)">
+          <img src="assets/icon/close (1).png" alt="" />
+        </div>
+        <div class="user">
+          <img src="assets/x-7d4LREDSPyQ-unsplash.jpg" alt="Username" />
+          <p>Student X </p>
+        </div>
+        <ul>
+          <li><a href="#home_section">Home</a></li>
+          <li><a href="#teachers_section">Teachers</a></li>
+          <li><a href="#courses_section">Courses</a></li>
+          <li><a href="#contactus_section">Contact us</a></li>
+          <li><a href="#feedBACK">Feedback</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Some Popular Subjects -->
+    <div class="title">
+      <span>Popular Subjects on ZE-learning</span>
+    </div>
+    <br /><br />
+    <div class="course">
+      <center>
+        <div class="cbox">
+          <div class="det">
+            <a href="#"> Analyse Numerique</a
+            >
+          </div>
+          <div class="det">
+            <a href="#"> ARDUINO</a>
+          </div>
+        </div>
+      </center>
+      <div class="cbox">
+        <div class="det">
+          <a href="#"
+            >Capteurs</a>
+        </div>
+        <div class="det">
+          <a href="#">FPGA</a
+          >
+        </div>
+        <div class="det">
+          <a href="#" >Algorithm</a
+          >
+        </div>
+        <div class="det det-last">
+          <a href="#"
+            >Projects</a
+          >
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Teachers -->
+    <div class="diffSection" id="teachers_section">
+      <center>
+        <p style="font-size: 50px; padding-top: 100px; padding-bottom: 60px">
+          We're the Teachers !
+        </p>
+      </center>
+      <div class="totalcard">
+        <div class="card">
+          <center>
+            <img src="assets/zack/314726675_5591723840942192_6859463643960840614_n.jpg" />
+          </center>
+          <center>
+            <div class="card-title">MAMOU Rayan Zakaria</div>
+            <div id="detail">
+           
+              <div class="duty"></div>
+              <a
+                href="https://www.linkedin.com/in/mamou-rayan-zakaria-235916217/"
+                target="_blank"
+                ><button class="btn-zakaria">Follow +</button></a
+              >
+            </div>
+          </center>
+        </div>
+        <div class="card">
+          <center><img src="assets/Bouchra/314848218_876181693797235_5949043616239794222_n.png" /></center>
+          <center>
+            <div class="card-title">BOUCHOUL Bouchra</div>
+            <div id="detail">
+           
+              <div class="duty"></div>
+              <a
+                href="https://www.linkedin.com/in/bouchra-bouchoul-819a08233/"
+                target="_blank"
+                ><button class="btn-Bouchra">Follow +</button></a
+              >
+            </div>
+          </center>
+        </div>
+        <div class="card">
+          <center>
+            <img src="assets/OUSSAMA/315003992_1925096807844173_8551654876470424924_n.jpg" />
+          </center>
+          <center>
+            <div class="card-title">FELLAG Oussama</div>
+            <div id="detail">
+            
+              <div class="duty"></div>
+              <a
+                href="https://www.linkedin.com/in/oussama-fellag-9463b71a5/"
+                target="_blank"
+                ><button class="btn-zakaria">Follow +</button></a
+              >
+            </div>
+            </center>
+      </div>
+       <div class="card">
+          <center>
+            <img src="assets/Omar/315003601_653575826261160_6664119112964006194_n.jpg" />
+          </center>
+          <center>
+            <div class="card-title">AIT ARAA Omar</div>
+            <div id="detail">
+            
+              <div class="duty"></div>
+              <a
+                href="https://www.linkedin.com/in/omar-aittaara-6b85301a2/"
+                target="_blank"
+                ><button class="btn-zakaria">Follow +</button></a
+              >
+            </div>
+            </center>
+      </div>
+       <div class="card">
+          <center>
+            <img src="assets/radia/1664529286372.jpg" />
+          </center>
+          <center>
+            <div class="card-title">BOUHADBA Radia </div>
+            <div id="detail">
+            
+              <div class="duty"></div>
+              <a
+                href="https://www.linkedin.com/in/radia-bouhadba-9a1566201/"
+                target="_blank"
+                ><button class="btn-Bouchra">Follow +</button></a
+              >
+            </div>
+            </center>
+      </div>
+
+    </div>
+
+    <!-- Courses -->
+    <div class="course-swipe">
+      <div class="diffSection" id="courses_section">
+        <center>
+          <p
+            style="
+              font-size: 50px;
+              padding: 100px;
+              padding-bottom: 40px;
+              color: #fff;
+            "
+          >
+            Courses
+          </p>
+        </center>
+      </div>
+      <a href="https://www.youtube.com/watch?v=HeehzBlU6oQ&list=PLIy_TXmN8plyz6mwl49DAU87PK4spyY5c"
+        ><div class="s-card">
+          <img src="assets/icon/algebre.png" />
+          <p>Algebre</p>
+        </div></a
+      >
+      <a href="https://www.youtube.com/watch?v=Tl6j1ME1icU&list=PLww54WQ2wa5rRBfQEdrRUVtVYJndUvuNY"
+        ><div class="s-card">
+          <img src="assets/icon/motherboard.png" />
+          <p>Arduino</p>
+        </div></a
+      >
+      <a href="https://youtu.be/gUsHwi4M4xE"
+        ><div class="s-card">
+          <img src="assets/icon/cpu.png" />
+          <p>FPGA</p>
+        </div></a
+      >
+      <a href="https://www.youtube.com/watch?v=XByahpPKgjE&list=PLlCrSfXAyHN4L2u8RtXMOHeat604EJrwg"
+        ><div class="s-card">
+          <img src="assets/icon/mathematiques.png" />
+          <p>Analyse Numerique</p>
+        </div></a
+      >
+      <a href="https://www.youtube.com/watch?v=RVyxq5YA2OQ&list=PL-YufX86sb3ShSPAOTaNNxpDwrMWM8YwU"
+        ><div class="s-card">
+          <img src="assets/icon/signalpng.png" />
+          <p>Traitment de Signal Numerique</p>
+        </div></a
+      >
+      <a href="https://www.youtube.com/watch?v=f3UVQPbw32w&list=PLrSOXFDHBtfFKOzlm5iCBeXDTLxXdmxpx"
+        ><div class="s-card">
+          <img src="assets/icon/c++.png" />
+          <p> C++</p>
+        </div></a
+      >
+      <a href="https://www.youtube.com/watch?v=h3VCQjyaLws&list=PLuXY3ddo_8nzrO74UeZQVZOb5-wIS6krJ"
+        ><div class="s-card">
+          <img src="assets/icon/python.png" />
+          <p>Python</p>
+        </div></a
+      >
+      <a href="https://www.youtube.com/watch?v=nuIY2Blym1c&list=PLlJhKYtnhjDeY9ER-cGHmPhoLoWtlEeqv"
+        ><div class="s-card">
+          <img src="assets/icon/sensor.png" />
+          <p>Capteurs</p>
+        </div></a
+      <a href="https://www.youtube.com/watch?v=kSA2SsUAD20&list=PLIy_TXmN8plxOVkvixUstIKK5RmNByH9h"
+        ><div class="s-card">
+          <img src="assets/icon/mean.png" />
+          <p>Serie Numerique</p>
+        </div></a
+      <a href="https://www.youtube.com/watch?v=NmVR7yd_fq0&list=PL-b5Zp9H7qBjWwS-fudlhLCVPJZEV5h0S"
+        ><div class="s-card">
+          <img src="assets/icon/coding.png" />
+          <p>Algorithm et Programation</p>
+        </div></a
+      >
+    </div>
+
+    
+
+    <!-- CONTACT US -->
+    <div class="diffSection" id="contactus_section">
+      <center><p style="font-size: 50px; padding: 100px">Contact Us</p></center>
+      <div class="csec"></div>
+      <div class="back-contact">
+        <div class="cc">
+          <form
+            action="mailto:mamouzakaria7àgmail.com"
+            method="post"
+            enctype="text/plain"
+          >
+            <label>First Name <span class="imp">*</span></label
+            ><label style="margin-left: 185px"
+              >Last Name <span class="imp">*</span></label
+            ><br />
+            <center>
+              <input
+                type="text"
+                name=""
+                style="margin-right: 10px; width: 175px"
+                required="required"
+              /><input
+                type="text"
+                name="lname"
+                style="width: 175px"
+                required="required"
+              /><br />
+            </center>
+            <label>Email <span class="imp">*</span></label
+            ><br />
+            <input
+              type="email"
+              name="mail"
+              style="width: 100%"
+              required="required"
+            /><br />
+            <label>Message <span class="imp">*</span></label
+            ><br />
+            <input
+              type="text"
+              name="message"
+              style="width: 100%"
+              required="required"
+            /><br />
+            <label>Additional Details</label><br />
+            <textarea name="addtional"></textarea><br />
+            <button type="submit" id="csubmit">Send Message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- FEEDBACK -->
+    <div class="title2" id="feedBACK">
+      <span>Give Feedback</span>
+      <div class="shortdesc2">
+        <p>Please share your valuable feedback to us</p>
+      </div>
+    </div>
+
+    <div class="feedbox">
+      <div class="feed">
+        <form
+          action="mailto:mamouzakaria7@gmail.com"
+          method="post"
+          enctype="text/plain"
+        >
+          <label>Your Name</label><br />
+          <input type="text" name="" class="fname" required="required" /><br />
+          <label>Email</label><br />
+          <input type="email" name="mail" required="required" /><br />
+          <label>Additional Details</label><br />
+          <textarea name="addtional"></textarea><br />
+          <button type="submit" id="csubmit">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Sliding Information -->
+    <marquee
+      style="
+        background: linear-gradient(to right, #4835c2e6, #3f2bc2);
+        margin-top: 50px;
+      "
+      direction="left"
+      onmouseover="this.stop()"
+      onmouseout="this.start()"
+      scrollamount="20"
+      ><div class="marqu">
+        “The beautiful thing about learning is that nobody can take it away from you” 
+       &nbsp;&nbsp;&nbsp;    The ZE learning is always here to help
+      </div></marquee
+    >
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="footer-container">
+        <div class="left-col">
+          
+          <div class="logo"></div>
+          <div class="social-media">
+            <a href="#"><img src="assets/icon\fb.png" /></a>
+            <a href="#"><img src="assets/icon\insta.png" /></a>
+            <a href="#"><img src="assets/icon\tt.png" /></a>
+            <a href="#"><img src="assets/icon\ytube.png" /></a>
+            <a href="#"><img src="assets/icon\linkedin.png" /></a>
+          </div>
+          <br /><br />
+          <p class="rights-text">
+            Copyright © 2021 Created By Mamou Rayan Zakaria All Rights
+            Reserved.
+          </p>
+          <br />
+          <p>
+            <img src="assets/icon/location.png" /> 
+            University of Science and Technology<br />Algerie
+          </p>
+          <br />
+          <p>
+            <img src="assets/icon/phone.png" /> 0794536187<br /><img
+              src="assets/icon/mail.png"
+            />&nbsp; mamouzakaria7@gmail.com
+          </p>
+        </div>
+        <div class="right-col">
+          <h1 style="color: #fff">Our Newsletter</h1>
+          <div class="border"></div>
+          <br />
+          <p>Enter Your Email to get our News and updates.</p>
+          <form class="newsletter-form">
+            <input class="txtb" type="email" placeholder="Enter Your Email" />
+            <input class="btn" type="submit" value="Submit" />
+          </form>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
